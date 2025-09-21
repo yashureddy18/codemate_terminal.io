@@ -1,26 +1,60 @@
-# Codemate Terminal Project
+# 📘 CodeMate AI Terminal Assignment
 
-A short one-line description of the project — what it does and why.
+## Overview
+This project implements a **Python-based AI-enhanced command terminal** for the CodeMate Hackathon.  
 
-## Requirements
-- Python 3.8+
-- (Optional) Install dependencies: `pip install -r requirements.txt`
+It combines:
 
-## Setup & Run (local)
-1. Open a terminal in the project folder:
-   `C:\Users\YASASWINI SYAMALA\codemate_terminal`
-2. Install dependencies (if any):
-   `pip install -r requirements.txt`
-3. Run the app:
-   `python main.py`
+- Standard terminal commands: `ls`, `cd`, `mkdir`, `rm`, `pwd`, `sysinfo`  
+- **AI natural language commands** via **Ollama LLaMA3**  
+- Command history and autocomplete using `prompt_toolkit`  
+- Fully compatible with **CodeMate Build** and **CodeMate Extension**  
 
-## Project files
-- `main.py` — entry point (replace if yours is named differently)
-- `your_new_file.py` — brief description of what you added
+This is a **single-file implementation (`main.py`)**, so all functionality is in one place for simplicity.
 
-## Demo
-- Live video: (link to your recorded demo)
-- Hosted URL: (link if you hosted on Replit/Heroku/etc.)
+---
 
-## License
-MIT (or your chosen license)
+## Folder Structure
+codemate_assignment/
+│── main.py # Entry point with AI and terminal commands
+│── .cmd_history # Command history (auto-generated)
+│── README.md # This file
+
+---
+
+## Features
+
+### 1. Basic Commands
+| Command   | Description                           |
+|-----------|---------------------------------------|
+| `ls`      | List files and directories            |
+| `cd`      | Change directory                      |
+| `mkdir`   | Create a new directory                |
+| `rm`      | Delete file or directory              |
+| `pwd`     | Show current working directory        |
+| `sysinfo` | Show CPU and memory usage             |
+| `exit`    | Quit the terminal                     |
+
+### 2. AI Commands
+Use the `ai` command to type natural language requests:
+ai create a folder called test
+ai show CPU and memory usage
+ai delete test
+The AI interprets your instructions and executes the corresponding terminal commands automatically.
+
+3. Command History & Autocomplete
+
+Navigate history with up/down arrows
+
+Auto-complete commands using Tab
+Setup Instructions
+
+Install Python dependencies:
+py -m pip install prompt_toolkit requests psutil
+
+Run Ollama LLaMA3 locally:
+ollama run llama3
+
+Run the terminal:
+py main.py
+Use exit to quit or ai <natural language request> for AI commands.
