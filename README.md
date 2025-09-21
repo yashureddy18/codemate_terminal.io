@@ -58,4 +58,4 @@ ollama run llama3
 Run the terminal:
 py main.py
 
-###Use exit to quit or ai <natural language request> for AI commands.
+## Use exit to quit or ai <natural language request> for AI commands.
