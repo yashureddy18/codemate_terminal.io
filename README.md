@@ -42,7 +42,7 @@ ai show CPU and memory usage
 ai delete test
 The AI interprets your instructions and executes the corresponding terminal commands automatically.
 
-3. Command History & Autocomplete
+### 3. Command History & Autocomplete
 
 Navigate history with up/down arrows
 
@@ -57,4 +57,5 @@ ollama run llama3
 
 Run the terminal:
 py main.py
-Use exit to quit or ai <natural language request> for AI commands.
+
+#Use exit to quit or ai <natural language request> for AI commands.
